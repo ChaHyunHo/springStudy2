@@ -146,4 +146,13 @@ Java config (List type , Map type)
 			info.setAdministrators(administrators);
 	}
 	
+	Main class)
+		/*
+		 * GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(
+		 * "file:src/main/webapp/WEB-INF/spring/context-**.xml");
+		 */
+		
+		AnnotationConfigApplicationContext ctx =
+					new AnnotationConfigApplicationContext(MemberConfig.class); // 해당 설정파일의 클래스를 불러와 적용한다.
+	
 ```
