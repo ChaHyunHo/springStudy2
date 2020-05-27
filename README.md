@@ -129,7 +129,7 @@ Java config (List type , Map type)
 		EMSInformationService info = new EMSInformationService();
 		
 		// 리스트 작성
-		List<String> developers = new ArrayList<String>();
+		List<String> developers = new ArrayList<String>(); 
 			developers.add("Cheney.");
 			developers.add("Eloy.");
 			developers.add("Jasper.");
