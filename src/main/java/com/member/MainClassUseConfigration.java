@@ -38,14 +38,20 @@ public class MainClassUseConfigration {
 				"French Language and Literature", "Philosophy", "History", 
 				"Law", "Statistics", "Computer", "Economics", "Public Administration"};
 
-//		StudentAssembler assembler = new StudentAssembler();
+		// StudentAssembler assembler = new StudentAssembler();
 		/*
 		 * GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(
 		 * "file:src/main/webapp/WEB-INF/spring/context-**.xml");
 		 */
 		
+		/*
+		 * AnnotationConfigApplicationContext ctx = new
+		 * AnnotationConfigApplicationContext(MemberConfig1.class, MemberConfig2.class,
+		 * MemberConfig3.class);
+		 */
+		
 		AnnotationConfigApplicationContext ctx =
-					new AnnotationConfigApplicationContext(MemberConfig.class);
+				new AnnotationConfigApplicationContext(MemberConfig.class);
 		
 		EMSInformationService informationService = ctx.getBean("informationService", EMSInformationService.class);
 		informationService.outputEMSInformation();
